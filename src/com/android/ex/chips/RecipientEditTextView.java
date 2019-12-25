@@ -1071,7 +1071,7 @@ public class RecipientEditTextView extends MultiAutoCompleteTextView implements
 
     private int getDefaultChipTextColor(RecipientEntry contact) {
         return contact.isValid() ? mUnselectedChipTextColor :
-                getResources().getColor(android.R.color.black);
+                getResources().getColor(R.color.chip_text_color);
     }
 
     private int getDefaultChipBackgroundColor(RecipientEntry contact) {
@@ -1250,7 +1250,7 @@ public class RecipientEditTextView extends MultiAutoCompleteTextView implements
 
         mUnselectedChipTextColor = a.getColor(
                 R.styleable.RecipientEditTextView_unselectedChipTextColor,
-                r.getColor(android.R.color.black));
+                r.getColor(R.color.chip_text_color));
 
         mUnselectedChipBackgroundColor = a.getColor(
                 R.styleable.RecipientEditTextView_unselectedChipBackgroundColor,
